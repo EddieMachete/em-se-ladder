@@ -1,0 +1,44 @@
+[
+    {
+        "code": "formal-training",
+        "name": "Formal training and education",
+        "description": "Formal training, or equivalent experience, in Computer Science.",
+        "type": "professional"
+    },
+    {
+        "code": "independence",
+        "name": "Independence",
+        "description": "The engineer can code up anything the lead asks. If the engineer does not know how, the engineer knows who to ask, or who to ask who to ask.",
+        "type": "professional"
+    },
+    {
+        "code": "team-leadership",
+        "name": "Team leadership",
+        "description": "The engineer influence the rest of the team of roughly 3 – 12 engineers.  The influence comes as their managing lead or as their technical lead. Either way, the engineer's impact extends beyond what he or she can do alone.",
+        "type": "professional"
+    },
+    {
+        "code": "group-leadership",
+        "name": "Group leadership",
+        "description": "The engineer influences the entire organization, of 80 – 500 engineers,  as the discipline director, general manager, partner architect, or core technology worldwide expert. The engineer has become a partner at the company.",
+        "type": "professional"
+    },
+    {
+        "code": "industry-leadership",
+        "name": "Industry leadership",
+        "description": "The engineer influences the entire division, and with it the entire industry (from 500 to millions of engineers), as a distinguished engineer, technical fellow, or vice president.",
+        "type": "professional"
+    },
+    {
+        "code": "C#",
+        "name": "C#",
+        "description": "",
+        "type": "technical"
+    },
+    {
+        "code": "goal-directed-design",
+        "name": "Goal directed design",
+        "description": "",
+        "type": "design"
+    }
+]

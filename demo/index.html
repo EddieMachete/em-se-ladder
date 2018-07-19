@@ -1,0 +1,55 @@
+<!--
+@license
+Copyright (c) 2018 Eduardo Echeverria. All rights reserved.
+This code should no be modified and/or distributed without explicit permission from Eduardo Echeverria.
+Author: Eduardo Echeverria <@eddiemachete>
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
+    <title>Software Engineer Ladder :: Eddie Machete</title>
+    <style>
+        @font-face {
+            font-family: CalibriLight;
+            src:
+                local("Calibri Ligth"),
+                url(/fonts/calibri/ttf/calibril.ttf) format("truetype");
+                font-weight: 400;
+        }
+
+        body {
+            font-family: Segoe UI,CalibriLight,Helvetica Neue,Arial,sans-serif;
+            -webkit-font-smoothing: antialiased;
+            margin: 0;
+            padding: 16px;
+        }
+    </style>
+    <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+    <script type="module" src="scripts/ui/em-se-ladder-ui-app.js"></script>
+    <script type="module" src="scripts/ui/em-se-ladder-ui-developer.js"></script>
+    <script type="module" src="scripts/ui/em-se-ladder-ui-contribution.js"></script>
+</head>
+<body>
+    <div class="main-content">
+        <em-se-ladder-ui-app id="app"></em-se-ladder-ui-app>
+    </div>
+    <script type="module">
+        /* global */
+        'use strict';
+
+        import { DeveloperProvider } from './scripts/data/developer.provider.js';
+        
+        const developerProvider = new DeveloperProvider();
+        const app = document.getElementById('app');
+
+        app.stateChanged(
+            {
+                developer: developerProvider.getDevelopers()[0]
+            }
+        );
+    </script>
+</body>
+</html>

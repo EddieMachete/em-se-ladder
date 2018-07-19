@@ -1,0 +1,34 @@
+{
+  "author": {
+    "name": "Eduardo Echeverria"
+  },
+  "dependencies": {
+    "@polymer/lit-element": "^0.5.2",
+    "@polymer/polymer": "^3.0.2",
+    "@webcomponents/webcomponentsjs": "^2.0.0"
+  },
+  "description": "",
+  "devDependencies": {},
+  "homepage": "",
+  "keywords": [
+    "custom component",
+    "web component",
+    "google",
+    "polymer",
+    "polymer 3"
+  ],
+  "license": "",
+  "main": "index.html",
+  "name": "em-se-ladder-ui",
+  "optionalDependencies": {},
+  "readme": "README.md",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "start": "polymer serve",
+    "tsc": "tsc --watch"
+  },
+  "version": "0.0.1"
+}
