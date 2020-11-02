@@ -2,20 +2,28 @@
   "author": {
     "name": "Eduardo Echeverria"
   },
-  "dependencies": {
-    "@polymer/lit-element": "^0.5.2",
-    "@polymer/polymer": "^3.0.2",
-    "@webcomponents/webcomponentsjs": "^2.0.0"
-  },
+  "dependencies": {},
   "description": "",
-  "devDependencies": {},
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^16.0.0",
+    "@rollup/plugin-node-resolve": "^10.0.0",
+    "@rollup/plugin-typescript": "^6.1.0",
+    "@types/jest": "^26.0.15",
+    "@typescript-eslint/eslint-plugin": "^4.6.0",
+    "@typescript-eslint/parser": "^4.6.0",
+    "copyfiles": "^2.4.0",
+    "cspell": "^4.1.2",
+    "eslint": "^7.12.1",
+    "eslint-junit": "^1.0.1",
+    "http-server": "^0.12.3",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.32.1",
+    "typescript": "^4.0.5"
+  },
   "homepage": "",
   "keywords": [
     "custom component",
-    "web component",
-    "google",
-    "polymer",
-    "polymer 3"
+    "web component"
   ],
   "license": "",
   "main": "index.html",
@@ -27,8 +35,15 @@
     "url": ""
   },
   "scripts": {
-    "start": "polymer serve",
-    "tsc": "tsc --watch"
+    "prebuild": "rimraf ./build",
+    "build": "rollup -c",
+    "_postbuild": "copyfiles assets/**/* build/crc",
+    "prebuild:dev": "npm run prebuild",
+    "build:dev": "rollup -c --environment BUILD:development",
+    "postbuild:dev": "npm run postbuild",
+    "prebuild:prod": "npm run prebuild",
+    "build:prod": "rollup -c --environment BUILD:production",
+    "postbuild:prod": "npm run postbuild"
   },
-  "version": "0.0.1"
+  "version": "0.0.2"
 }
