@@ -12,7 +12,7 @@ import { developerData as Eddie } from './eddie';
 import { projectData } from './projects';
 import { iProjectModel } from './iProjectModel';
 import { iProjectContributionsModel } from './iProjectContributionsModel';
-import { Company, Developer, Project, ProjectContributions } from '../core';
+import { Company, Developer, Project, ProjectContributions } from '../core/domain';
 
 export class DeveloperProvider {
     private developers: Developer[];

@@ -15,4 +15,4 @@ build/
 .env
 
 demo/scripts
-package-lock.json
+.vscode/
