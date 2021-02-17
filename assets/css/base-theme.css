@@ -1,0 +1,295 @@
+/**
+ * @license
+ * Copyright (c) 2020 Eduardo Echeverría. All rights reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+ 
+body {
+  --theme-color-50: #FAFAFA;
+  --theme-color-100: #F5F5F5;
+  --theme-color-200: #EEEEEE;
+  --theme-color-300: #E0E0E0;
+  --theme-color-400: #BDBDBD;
+  --theme-color-500: #9E9E9E;
+  --theme-color-600: #757575;
+  --theme-color-700: #616161;
+  --theme-color-800: #424242;
+  --theme-color-900: #212121;
+  --theme-color-A100: #FF9E80;
+  --theme-color-A200: #FF6E40;
+  --theme-color-A400: #FF3D00;
+  --theme-color-A700: #DD2C00;
+
+  /* Sets the text color to the theme primary color */
+  --theme-primary-color: #000;
+
+  /* Sets the text color to the theme secondary color */
+  --theme-secondary-color: #000;
+
+  /* Sets the background color to the theme background color */
+  --theme-background: #E0E0E0;
+
+  /* Sets the surface color to the theme surface color */
+  --theme-surface: #000;
+
+  /* Sets the text color to the theme on-primary color */
+  --theme-on-primary: #000;
+
+  /* Sets the text color to the theme on-secondary color */
+  --theme-on-secondary: #000;
+
+  /* Sets the text color to the theme on-surface color */
+  --theme-on-surface: #000;
+
+  /* Sets the background color to the theme primary color */
+  --theme-primary-bg: #000;
+
+  /* Sets the background color to the theme secondary color */
+  --theme-secondary-bg: #000;
+
+  --theme-dark-text-color: var(--app-secondary-color);
+  --theme-light-text-color: white;
+  --theme-section-even-color: #f7f7f7;
+  --theme-section-odd-color: white;
+  --theme-header-background-color: white;
+  --theme-header-text-color: var(--app-dark-text-color);
+  --theme-header-selected-color: var(--app-primary-color);
+  --theme-error-text-color: #C00;
+
+  /* -- FONTS -- */
+  --theme-font-family: 'Segoe UI Web (West European)','Segoe UI',-apple-system,BlinkMacSystemFont,Roboto,'Helvetica Neue',Frutiger,Frutiger Linotype,Dejavu Sans,Arial, sans-serif;
+  --theme-font-large-visualization-font-size: 68px;
+  --theme-font-large-visualization-font-weight: lighter;
+  --theme-font-large-visualization-line-height: 76px;
+  --theme-font-header-font-weight: lighter;
+  --theme-font-header-line-height: 56px;
+  --theme-font-subheader-font-size: 34px;
+  --theme-font-subheader-font-weight: lighter;
+  --theme-font-subheader-line-height: 40px;
+  --theme-font-title-font-size: 28px;
+  --theme-font-title-font-weight: Lighter;
+  --theme-font-title-line-height: 36px;
+  --theme-font-title-marketing-font-size: 24px;
+  --theme-font-title-marketing-font-weight: 400;
+  --theme-font-title-marketing-line-height: 32px;
+  --theme-font-subtitle-font-size: 20px;
+  --theme-font-subtitle-font-weight: 400;
+  --theme-font-subtitle-line-height: 28px;
+  --theme-font-subtitle-condensed-font-size: 18px;
+  --theme-font-subtitle-condensed-font-weight: 400;
+  --theme-font-subtitle-condensed-line-height: 24px;
+  --theme-font-body-marketing-font-size: 16px;
+  --theme-font-body-marketing-font-weight: 400;
+  --theme-font-body-marketing-line-height: 22px;
+  --theme-font-base-font-size: 14px;
+  --theme-font-base-font-weight: bold;
+  --theme-font-base-line-height: 20px;
+  --theme-font-body-font-size: 14px;
+  --theme-font-body-font-weight: 400;
+  --theme-font-body-line-height: 20px;
+  --theme-font-caption-font-size: 12px;
+  --theme-font-caption-font-weight: 400;
+  --theme-font-caption-line-height: 14px;
+  --theme-font-condensed-font-size: 10px;
+  --theme-font-condensed-font-weight: 400;
+  --theme-font-condensed-line-height: 14px;
+
+  /* -- MATERIALS -- */
+  --theme-acrylic-backdrop-filter: blur(20px);
+  --theme-acrylic-40-background-color: rgba(255,255,255,.4);
+  --theme-acrylic-40-dark-background-color: rgba(2, 2, 2, 0.4);
+  --theme-acrylic-60-background-color: rgba(255,255,255,.6);
+  --theme-acrylic-60-dark-background-color: rgba(66,66,66,.6);
+  --theme-acrylic-80-background-color: rgba(255,255,255,.8);
+  --theme-acrylic-80-dark-background-color: rgba(66,66,66,.8);
+  --theme-acrylic-90-background-color: rgba(255,255,255,.9);
+  --theme-acrylic-90-dark-background-color: rgba(66,66,66,.9);
+}
+
+.acrylic-40 {
+  backdrop-filter: var(--theme-acrylic-backdrop-filter, blur(20px));
+  background-color: var(--theme-acrylic-40-background-color, rgba(255,255,255,.4));
+}
+
+.acrylic-60 {
+  backdrop-filter: var(--theme-acrylic-backdrop-filter, blur(20px));
+  background-color: var(--theme-acrylic-60-background-color, rgba(255,255,255,.6));
+}
+
+.acrylic-80 {
+  backdrop-filter: var(--theme-acrylic-backdrop-filter, blur(20px));
+  background-color: var(--theme-acrylic-80-background-color, rgba(255,255,255,.8));
+}
+
+.acrylic-90 {
+  backdrop-filter: var(--theme-acrylic-backdrop-filter, blur(20px));
+  background-color: var(--theme-acrylic-90-background-color, rgba(255,255,255,.9));
+}
+
+.acrylic-100 {
+  /*
+  backdrop-filter: blur(20px);
+  rgba(255,255,255,.3);
+  */
+  background-color: var(--theme-background, #E0E0E0);
+}
+
+.acrylic-40.dark {
+  background-color: var(--theme-acrylic-40-dark-background-color, rgba(66,66,66,.4));
+}
+
+.acrylic-60.dark {
+  background-color: var(--theme-acrylic-60-dark-background-color, rgba(66,66,66,.6));
+}
+
+.acrylic-80.dark {
+  background-color: var(--theme-acrylic-80-dark-background-color, rgba(66,66,66,.8));
+}
+
+.acrylic-90.dark {
+  background-color: var(--theme-acrylic-80-dark-background-color, rgba(66,66,66,.9));
+}
+
+.acrylic-100.dark {
+  background-color: #424242;
+}
+
+.primary-material {
+  background-color: rgba(221,44,0,.8);
+}
+
+/*
+  Use for data visualization and/or large numerics.
+  Use sparingly when specific figures need to stand out.
+*/
+.font-large-visualization {
+  font-family: var(--theme-font-family, 'Segoe UI',Arial, sans-serif);
+  font-size: var(--theme-font-large-visualization-font-size, 68px);
+  font-weight: var(--theme-font-large-visualization-font-weight, lighter);
+  line-height: var(--theme-font-large-visualization-line-height, 76px);
+}
+
+/*
+  Use on Full screen hero moments:
+    * OneDrive Album Titles;
+    * Dates in All Photos View;
+    * SharePoint Site Titles;
+    * First run hero moments;
+    * Greeting moments at the start screen;
+*/
+.font-header {
+  font-family: var(--theme-font-family, 'Segoe UI',Arial, sans-serif);
+  font-weight: var(--theme-font-header-font-weight, lighter);
+  line-height: var(--theme-font-header-line-height, 56px);
+}
+
+/*
+  Use on titles for favorite document cards, Greeting moments.
+*/
+.font-subheader {
+  font-family: var(--theme-font-family, 'Segoe UI',Arial, sans-serif);
+  font-size: var(--theme-font-subheader-font-size, 34px);
+  font-weight: var(--theme-font-subheader-font-weight, lighter);
+  line-height: var(--theme-font-subheader-line-height, 40px);
+}
+
+/*
+  Use on page titles.
+*/
+.font-title {
+  font-family: var(--theme-font-family, 'Segoe UI',Arial, sans-serif);
+  font-size: var(--theme-font-title-font-size, 28px);
+  font-weight: var(--theme-font-title-font-weight, Lighter);
+  line-height: var(--theme-font-title-line-height, 36px);
+}
+
+/*
+  Marketing email header.
+*/
+.font-title-marketing {
+  font-family: var(--theme-font-family, 'Segoe UI',Arial, sans-serif);
+  font-size: var(--theme-font-title-marketing-font-size, 24px);
+  font-weight: var(--theme-font-title-marketing-font-weight, 400);
+  line-height: var(--theme-font-title-marketing-line-height, 32px);
+}
+
+/*
+  Page and pane headers, suite nav, Titles in teaching bubbles, dialogs and file hover cards.
+*/
+.font-subtitle {
+  font-family: var(--theme-font-family, 'Segoe UI',Arial, sans-serif);
+  font-size: var(--theme-font-subtitle-font-size, 20px);
+  font-weight: var(--theme-font-subtitle-font-weight, 400);
+  line-height: var(--theme-font-subtitle-line-height, 28px);
+}
+
+/*
+  Header for Team’s channel names.
+*/
+.font-subtitle-condensed {
+  font-family: var(--theme-font-family, 'Segoe UI',Arial, sans-serif);
+  font-size: var(--theme-font-subtitle-condensed-font-size, 18px);
+  font-weight: var(--theme-font-subtitle-condensed-font-weight, 400);
+  line-height: var(--theme-font-subtitle-condensed-line-height, 24px);
+}
+
+/*
+  Subject line in mail, SharePoint article body, Marketing emails as file name and body text.
+*/
+.font-body-marketing {
+  font-family: var(--theme-font-family, 'Segoe UI',Arial, sans-serif);
+  font-size: var(--theme-font-body-marketing-font-size, 16px);
+  font-weight: var(--theme-font-body-marketing-font-weight, 400);
+  line-height: var(--theme-font-body-marketing-line-height, 22px);
+}
+
+/*
+  Emphasized commands and controls (left nav, Team’s channels, command bar, checkbox, dropdown menu, toggle, radio button, button text and links), in file or document titles and as body text.
+*/
+.font-base {
+  font-family: var(--theme-font-family, 'Segoe UI',Arial, sans-serif);
+  font-size: var(--theme-font-base-font-size, 14px);
+  font-weight: var(--theme-font-base-font-weight, bold);
+  line-height: var(--theme-font-base-line-height, 20px);
+}
+
+/*
+  Commands and controls (left nav, Team’s channels, command bar, checkbox, dropdown menu, toggle, radio button, button text and links), in file or document titles and as body text.
+*/
+.font-body {
+  font-family: var(--theme-font-family, 'Segoe UI',Arial, sans-serif);
+  font-size: var(--theme-font-body-font-size, 14px);
+  font-weight: var(--theme-font-body-font-weight, 400);
+  line-height: var(--theme-font-body-line-height, 20px);
+}
+
+/*
+  Metadata in file lists and grid views, denotes any activity on items (number of views, shares or @mentions, timestamps), sharing permissions, persona names and in tooltips.
+*/
+.font-caption {
+  font-family: var(--theme-font-family, 'Segoe UI',Arial, sans-serif);
+  font-size: var(--theme-font-caption-font-size, 12px);
+  font-weight: var(--theme-font-caption-font-weight, 400);
+  line-height: var(--theme-font-caption-line-height, 14px);
+}
+
+/*
+  Limited usage, use in places where text is mandatory and space is tight. For example, it is used for any disclaimer text that may appear in a purchase flow. It’s also used as the initials in a list of SharePoint sites in the left nav
+*/
+.font-condensed {
+  font-family: var(--theme-font-family, 'Segoe UI',Arial, sans-serif);
+  font-size: var(--theme-font-condensed-font-size, 10px);
+  font-weight: var(--theme-font-condensed-font-weight, 400);
+  line-height: var(--theme-font-condensed-line-height, 14px);
+}

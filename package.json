@@ -38,12 +38,7 @@
     "prebuild": "rimraf ./build",
     "build": "rollup -c",
     "_postbuild": "copyfiles assets/**/* build/crc",
-    "prebuild:dev": "npm run prebuild",
-    "build:dev": "rollup -c --environment BUILD:development",
-    "postbuild:dev": "npm run postbuild",
-    "prebuild:prod": "npm run prebuild",
-    "build:prod": "rollup -c --environment BUILD:production",
-    "postbuild:prod": "npm run postbuild"
+    "start": "http-server build/ -s -c-1 -p 44333"
   },
   "version": "0.0.2"
 }
