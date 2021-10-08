@@ -72,6 +72,7 @@ body {
   --theme-font-large-visualization-font-size: 68px;
   --theme-font-large-visualization-font-weight: lighter;
   --theme-font-large-visualization-line-height: 76px;
+  --theme-font-header-font-size: 46px;
   --theme-font-header-font-weight: lighter;
   --theme-font-header-line-height: 56px;
   --theme-font-subheader-font-size: 34px;
@@ -190,6 +191,7 @@ body {
 */
 .font-header {
   font-family: var(--theme-font-family, 'Segoe UI',Arial, sans-serif);
+  font-size: var(--theme-font-header-font-size, 46px);
   font-weight: var(--theme-font-header-font-weight, lighter);
   line-height: var(--theme-font-header-line-height, 56px);
 }

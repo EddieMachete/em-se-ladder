@@ -37,7 +37,7 @@
   "scripts": {
     "prebuild": "rimraf ./build",
     "build": "rollup -c",
-    "_postbuild": "copyfiles assets/**/* build/crc",
+    "_postbuild": "copyfiles assets/**/* build",
     "start": "http-server build/ -s -c-1 -p 44333"
   },
   "version": "0.0.2"

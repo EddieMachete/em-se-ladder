@@ -1,19 +1,3 @@
-<!--
-@license
-Copyright (c) 2020 Eduardo Echeverría. All rights reserved.
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
--->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -26,15 +10,12 @@ limitations under the License.
     <title>Eduardo Echeverría</title>
     <meta name="description" content="Eduardo Echeverría" />
 
-    <link
-      rel="stylesheet"
-      href="css/base-theme.css"
-    />
+    <link rel="stylesheet" href="css/base-theme.css" />
 
     <!-- Add any global styles for body, document, etc. -->
     <style>
       body {
-        font-family: var(--theme-font-family, 'Segoe UI',Arial, sans-serif);
+        font-family: var(--theme-font-family, "Segoe UI", Arial, sans-serif);
       }
 
       .body-old {
@@ -55,58 +36,263 @@ limitations under the License.
         padding: 0;
       }
 
-      [content] {
-        box-shadow: 0 0 40px rgba(0, 0, 0, .2);
+      article {
+        /*box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);*/
+        border: dotted 1px #CCC;
         flex-grow: 1;
         height: 100%;
         margin: 60px auto 0 auto;
         max-width: 980px;
+        padding: 24px;
         width: 100%;
       }
+
+      span[skill]::after {
+        color: #999;
+        content: "\2218";
+        margin: 0 8px;
+      }
+
+      em-option-base-control div {
+        position: relative;
+        z-index: 100;
+      }
     </style>
-    <script>window.process = {env: {NODE_ENV: 'development'} };</script>
+    <script>
+      window.process = { env: { NODE_ENV: "development" } };
+    </script>
   </head>
   <body>
-    <noscript>
-      Please enable JavaScript to view this website.
-    </noscript>
+    <noscript> Please enable JavaScript to view this website. </noscript>
     <div development-steps>
-      User research - Define persona's cast;
-      Generate content;
-      Determine Information Architecture;
-      Wire frames and UI Design;
-      Generate user stories;
-      Develop;
-      Test;
+      User research - Define persona's cast; Generate content; Determine
+      Information Architecture; Wire frames and UI Design; Generate user
+      stories; Develop; Test;
       <ol>
         <li>Step 1: Gather content;</li>
         <li>Step 1: Gather content;</li>
       </ol>
     </div>
-    
-    <div content>
-      <h1>Eduardo Echeverr&iacute;a</h1>
+
+    <article me>
+      <h1 class="font-header">Eduardo Echeverr&iacute;a</h1>
       <div>Front-end Developer and UX designer</div>
       <section>
-        <h2>About me</h2>
-        I believe we are living through a wonderful moment in time in which our relationship with technology is evolving in a most profound way.
-        As a person in tech, I feel a strong responsibility to help shape the future of technology in a way that is beneficial to human kind, the environment, and our world.
-        By applying my knowledge in interaction design and front-end software development, using all of my listening abilities and communication skills, and acting with empathy and a desire to learn new things and do better,
-        I help teams focus in user needs, inclusion, and interaction design best practices when developing interfaces that solve problems while defining the standards to be followed by those to come after us.
+        <h2 class="font-title">About me</h2>
+        I believe we are living through a wonderful moment in time in which our
+        relationship with technology is evolving in a most profound way. As a
+        person in tech, I feel a strong responsibility to help shape the future
+        of technology in a way that is beneficial to human kind, the
+        environment, and our world. By applying my knowledge in interaction
+        design and front-end software development, using all of my listening
+        abilities and communication skills, and acting with empathy and a desire
+        to learn new things and do better, I help teams focus in user needs,
+        inclusion, and interaction design best practices when developing
+        interfaces that solve problems. All this, while defining the standards
+        to be followed by those to come behind us.
       </section>
       <section>
-        <h2>My career approach</h2>
+        <h2 class="font-title">My career approach</h2>
       </section>
       <section>
-        <h2>Work and experience</h2>
+        <h2 class="font-title">Work and experience</h2>
+
+        <section>
+          <h3>Praxis Spinal Cord Institute</h3>
+          <div>Vancouver, BC, Canada.</div>
+          <div>Front-end Developer and UX designer From February 2019 to present.</div>
+          <section project>
+            <h4>Praxis Connect</h4>
+            <div>November, 2019 - <i>Present</i></div>
+            <div technology-used>
+              .Net Core, C#, TypeScript, JavaScript Custom Elements, CSS, Adobe XD, Microsoft DevOps
+            </div>
+            <p>
+              This project involves the re-development of the organization's data platforms.
+              The objective of the project is to create new sets of APIs and web applications to support the organization in its efforts of data collection, management, and analysis to accelerate the discovery of cures for Spinal Cord Injuries.
+            </p>
+            <p>
+              For this project:
+              <ul>
+                <li>I have played a central part in this project from the beginning</li>
+                <li>During the planning phase, I was a member in the team that evaluated the organization's needs and provided recommendations that took into consideration resources and third-party vendors</li>
+                <li>I was also a member of the team that created the original project plan and strategy</li>
+                <li>I co-authored most of the planning documentation for the project</li>
+                <li>During pre-production, I led the requirement gathering and elicitation by conducting interviews with our current users and stakeholders as well as with potential new users</li>
+                <li>I also participated in the architecture design for the web-based applications to be built</li>
+                <li>I developed the project's personas cast which include spectrums</li>
+                <li>At the beginning of the development phase, I served as Scrum Master until a dedicated resource was available</li>
+                <li>I have done all of the interaction and interface design for our web applications</li>
+                <li>I have worked on front-end development of our web applications</li>
+                <li>I have worked close to our QA specialist, Business Owner, and developers in the development of Behavior Driven Tests which are initiated by me during the design phase of every feature</li>
+                <li>I play a leadership role making sure the members of the team are motivated and are achieving their career objectives while working on this project</li>
+              </ul>
+            </p>
+            <p>
+              While working on this project I have increased my knowledge of:
+              <span skill>VS Code</span><!--
+              --><span skill>Visual Studio</span><!--
+              --><span skill>Microsoft DevOps</span><!--
+              --><span skill>Git</span><!--
+              --><span skill>Build Pipelines</span><!--
+              --><span skill>CucumberJS</span><!--
+              --><span skill>NPM</span><!--
+              --><span skill>TypeScript</span><!--
+              --><span skill>MS PlayWright</span><!--
+              --><span skill>Custom Elements</span><!--
+              --><span skill>CSS</span><!--
+              --><span skill>Fluent Design</span><!--
+              --><span skill>Inclusive Design</span><!--
+              --><span skill>Personas</span><!--
+              --><span skill>Persona Spectrums</span><!--
+              --><span skill>Clean Architecture</span><!--
+              --><span skill>Redux</span><!--
+              --><span skill>UX / Interface Design</span><!--
+              --><span skill>Adobe Illustrator</span><!--
+              --><span skill>Adobe XD</span>
+            </p>
+          </section>
+          <section project>
+            <h4>Digital Emergency Patient App</h4>
+          </section>
+          <section achievements>
+            <h4>Achievements</h4>
+            <div>2020 - Team leader</div>
+          </section>
+        </section>
+        <section>
+          <h3>Rick Hansen Institute</h3>
+          Senior software Engineer From February 2009 to January, 2019.
+          Vancouver, BC, Canada. Projects: Global Research
+          Platform (https://www.rhigrp.net/), ISNCSCI Algorithm
+          (http://www.isncscialgorithm.com/), ISNCSCI web component
+          (https://github.com/EddieMachete/rhi-core-isncsci-algorithm),
+          CliniQuick. Technology used: .Net Framework, C#, TypeScript,
+          JavaScript, AngularJS, Ionic Framework, CSS, InVision, Adobe XD,
+          Microsoft DevOps. I designed and contributed to the development of a
+          nationwide clinical research web platform to run studies targeted to
+          improve the quality of life of people with spinal cord injury and,
+          eventually, a cure for it. I had the opportunity of setting up a
+          process, based on agile methodologies, which is helping manage the
+          progress of the project, reduce waste and increase the benefits to its
+          users and stakeholders. I also worked on a mobile version of the
+          platform which we are building using the Ionic framework to target
+          both iOS and Android. I also started a project on my spare time which
+          has gained importance in the international research community (the
+          INSCSCI Algorithm web app). Due to its relevance, the project became
+          part of the Rick Hansen Institute’s suite of products.
+        </section>
+        <section>
+          Switchblade Monkeys Entertainment Interface developer From March, 2010
+          to June, 2015. Vancouver, BC, Canada Projects: Secret Ponchos
+          (http://www.secretponchos.com/). Technology Used: Unity 3D, Macromedia
+          Flash, ActionScript, C#. In 2010 I joined a group of friends in the
+          development of Secret Ponchos, a highly stylized first-person shooter
+          to be released on the PlayStation 4. Secret Ponchos is a side project
+          which has allowed me to learn a different set of tools and skills
+          while working with my friends. I have been responsible of the IT
+          support for the team taking care of the source code repositories in
+          Team Foundation Server and Team Foundation Services. I built the
+          database and web services required for data storage using Windows
+          Azure. I am also responsible for the development of the in-game menus.
+        </section>
+        <section>
+          AeroInfo Systems Inc. a Boeing Company Software Engineer From October
+          2004 to February 2009. Vancouver, BC, Canada Projects: Valsim, CAPE
+          and training. Technology used: .Net Framework, C#, Macromedia Flash,
+          ActionScript, JavaScript, Java. I worked on a marketing application
+          which produced interactive, graphical diagrams describing the
+          structure of an airline. We developed this tool following agile
+          methodologies. We came up with a very innovative solution where we
+          developed a windows desktop application, written in C# .Net, with an
+          interface written in Macromedia Flash which provided a very fast way
+          to render vector graphics. This approached help us overcome the very
+          slow rendering available through the WFC available back then. The
+          application used a very large data set, collected by Boeing, to find
+          areas where airlines were inefficient. The application also provided
+          suggestions on how to improve the airlines’ processes. I was
+          responsible of some of the graphic and interaction design. I also
+          coded all of the Flash based interface and .Net controllers required
+          to link the database with the GUI. I was also responsible of producing
+          PDF diagrams to be printed in large formats.
+        </section>
+        <section>
+          Universidad del Valle de Atemajac Flash instructor From January 2003
+          to June 2003. Guadalajara, Jalisco, México I shared my knowledge with
+          students and helped them to understand how to achieve their goals
+          through the use of the new design and animation web technologies.
+        </section>
+        <section>
+          Portal Siete Co-founder, Designer and Flash programmer From October
+          2000, to March 2002. Guadalajara, Jalisco, México Portal Siete
+          provided me with the opportunity of owning my own business. This
+          experience gave me insight on the importance of having a healthy work
+          environment and helping customers achieve their goals. Portal Siete
+          was also a hands-on introduction to management. I worked as a bridge
+          between the programming and design departments. My design as well as
+          my programming background allowed me to understand the requirements of
+          both and I had to help the designers and programmers to communicate
+          and develop a common language.
+        </section>
       </section>
       <section>
-        <h2>Skills</h2>
+        <h2 class="font-title">Skills</h2>
+
+        Skills Summary: ● 14 years of experience developing enterprise
+        applications on .NET platform for Desktop and Web, using OOP and best
+        practices. ● Experience on all phases of the Software Development Life
+        Cycle starting from requirements, through architectural decisions,
+        database development, coding, testing and delivering high robust and
+        secured applications. ● 16 years of experience developing web-based
+        applications using a diverse array of technologies like HTML,
+        JavaScript, CSS and Macromedia Flash, AngularJS, Google Polymer, Ionic
+        Framework, VanillaJS, and TypeScript. ● 2 years of experience managing a
+        software development team. ● Very strong graphic and interaction design
+        skills. ● Certified scrum master with 10 years’ experience in a scrum
+        team. ● Highly efficient in an agile environment. I like to follow the
+        trends, I learn quickly, and possess a well-rounded set of skills. ●
+        Excellent communication skills. Languages and tools: C#, JavaScript,
+        TypeScript, CSS3, HTML5, ActionScript, AngularJs, Google Polymer, Ionic
+        Framework, SQL Server, .Net MVC, Entity Framework, Microsoft Unit Test
+        Framework. Version control: Team Foundation Service and Git. General
+        skills: People management. Experience doing graphic and interaction
+        design. I use personas and the jobs to be done framework when gathering
+        requirements. I follow TDD, OOP, Agile methodologies, inclusive design
+        principles, fluent design principles, Clean Architecture principles, and
+        Lean Startup principles. Technical Abilities: I am proficient in the
+        user of graphic design software such as Adobe Photoshop, Adobe
+        Illustrator and Adobe InDesign. I like working using the User Centric
+        Design concepts proposed by Alan Cooper in the book, “The Inmates Are
+        Running the Asylum”. I worked for many years using Macromedia Flash. I
+        have been working with .Net since 2005. I’m most comfortable coding in
+        C# and TypeScript and I love building web apps. For the past year I have
+        been looking for a new approach to front end that can improve the
+        reusability of my code. I have found a very interesting solution, based
+        on Clean Architecture concepts, that takes advantage of TypeScript,
+        custom components, and NPM packaging. My favorite tools come as
+        methodologies and include: design patterns, test driven development,
+        customer development using the concepts of lean startup, agile
+        development and user centric design. Spoken Languages: Spanish and
+        English. Interests: I am interested in using technology to produce great
+        benefits for society. I am very keen of the use of lean practices and
+        enjoy starting projects with the potential of turning into startup
+        opportunities. I like finding ways of improving things around me. I
+        really enjoy tinkering with technology and discovering new ways of
+        adapting it to achieve specific goals in an innovative way. On a
+        personal level, I like a good film as much as I like a good book. I
+        enjoy being outdoors. I snowboard during the winter, play soccer, and
+        basketball during summer, and ride my bike to work all year. I love
+        making new relationships.
+      </section>
+      <section>
+        <h2 class="font-title">Education</h2>
+        Interactive Media Diploma from the Vancouver Film School (2003-2004).
+        Bachelor in Graphic Design from the Universidad del Valle de Atemajac,
+        Guadalajara, Jalisco, México (2001-2003). Four semesters of Computer
+        Systems Engineering at the Instituto Tecnológico y de Estudios
+        Superiores de Monterrey (1997-1999).
       </section>
     </div>
-    <link
-      rel="stylesheet"
-      href="assets/fonts/calibri/css/calibri.min.css"
-    />
+    <script type="text/javascript" src="scripts/bundle.js"></script>
   </body>
 </html>

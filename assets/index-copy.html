@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes"
+    />
+
+    <title>Label colors</title>
+
+    <link rel="stylesheet" href="css/base-theme.css" />
+
+    <!-- Add any global styles for body, document, etc. -->
+    <style>
+      body,
+      textarea {
+        font-family: var(--theme-font-family, "Segoe UI", Arial, sans-serif);
+        font-size: 14px;
+      }
+
+      [color-picker] {
+        display: flex;
+        margin: 16px;
+      }
+
+      [color-picker] button {
+        border: solid 1px #CCC;
+        border-radius: 12px;
+        height: 24px;
+        margin: 2px;
+        width: 24px;
+      }
+
+      [label] {
+        margin: 40px auto;
+        width: 328px;
+      }
+
+      [label] textarea {
+        height: 76px;
+        padding: 4px 8px;
+        width: 300px;
+      }
+
+      [label] [font] {
+        padding-left: 16px;
+      }
+
+      .label-1 {
+        background-color: #066;
+        color: #FFF;
+      }
+
+      .label-1.variant {
+        color: #E7FF00;
+      }
+
+      [label] textarea.label-1 {
+        border-color: #FFF;
+      }
+
+      [label] textarea.label-1.variant {
+        border-color: #FFF;
+      }
+
+      .label-2 {
+        background-color: #C00;
+        color: #FFF;
+      }
+
+      .label-2.variant {
+        color: #FFEFC0;
+      }
+
+      [label] textarea.label-2 {
+        border-color: #FFF;
+      }
+
+      [label] textarea.label-2.variant {
+        border-color: #FFEFC0;
+      }
+
+      .label-3 {
+        background-color: #A08;
+        color: #FFF;
+      }
+
+      .label-3.variant {
+        color: #70FFFF;
+      }
+
+      [label] textarea.label-3 {
+        border-color: #FFF;
+      }
+
+      [label] textarea.label-3.variant {
+        border-color: #70FFFF;
+      }
+
+      .label-4 {
+        background-color: #064706;
+        color: #FFF;
+      }
+
+      .label-4.variant {
+        color: #A7FF01;
+      }
+
+      [label] textarea.label-4 {
+        border-color: #FFF;
+      }
+
+      [label] textarea.label-4.variant {
+        border-color: #A7FF01;
+      }
+
+      .label-5 {
+        background-color: #FFF123;
+        color: #000;
+      }
+
+      .label-5.variant {
+        color: #3C00FF;
+      }
+
+      [label] textarea.label-5 {
+        border-color: #000;
+      }
+
+      [label] textarea.label-5.variant {
+        border-color: #3C00FF;
+      }
+
+      .label-6 {
+        background-color: #00E1FF;
+        color: #000;
+      }
+
+      .label-6.variant {
+        color: #909;
+      }
+
+      [label] textarea.label-6 {
+        border-color: #000;
+      }
+
+      [label] textarea.label-6.variant {
+        border-color: #909;
+      }
+
+      .label-7 {
+        background-color: #47D041;
+        color: #000;
+      }
+
+      .label-7.variant {
+        color: #650089;
+      }
+
+      [label] textarea.label-7 {
+        border-color: #000;
+      }
+
+      [label] textarea.label-7.variant {
+        border-color: #650089;
+      }
+
+      .label-8 {
+        background-color: #FF8C00;
+        color: #000;
+      }
+
+      .label-8.variant {
+        color: #2B02FF;
+      }
+
+      [label] textarea.label-8 {
+        border-color: #000;
+      }
+
+      [label] textarea.label-8.variant {
+        border-color: #2B02FF;
+      }
+
+      .label-9 {
+        background-color: #000;
+        color: #FFF;
+      }
+
+      .label-9.variant {
+        color: #96F6FF;
+      }
+
+      [label] textarea.label-9 {
+        border-color: #FFF;
+      }
+
+      [label] textarea.label-9.variant {
+        border-color: #96F6FF;
+      }
+
+      .label-10 {
+        background-color: #E2E2E2;
+        color: #000;
+      }
+
+      .label-10.variant {
+        color: #A4008B;
+      }
+
+      [label] textarea.label-10 {
+        border-color: #000;
+      }
+
+      [label] textarea.label-10.variant {
+        border-color: #A4008B;
+      }
+
+      .label-11 {
+        background-color: #FDF;
+        color: #000;
+      }
+
+      .label-11.variant {
+        color: #808;
+      }
+
+      [label] textarea.label-11 {
+        border-color: #000;
+      }
+
+      [label] textarea.label-11.variant {
+        border-color: #808;
+      }
+
+      .label-12 {
+        background-color: #FFF;
+        color: #000;
+      }
+
+      .label-12.variant {
+        color: #963700;
+      }
+
+      [label] textarea.label-12 {
+        border-color: #000;
+      }
+
+      [label] textarea.label-12.variant {
+        border-color: #963700;
+      }
+
+    </style>
+    <script>
+      window.process = { env: { NODE_ENV: "development" } };
+    </script>
+  </head>
+  <body>
+    <!--https://color.adobe.com/create/color-contrast-analyzer-->
+    <noscript> Please enable JavaScript to view this website. </noscript>
+    <div label>
+      <div field>
+        <textarea class="label-1">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</textarea>
+      </div>
+      <div color-picker>
+        <div background>
+          <button class="label-1">&nbsp;</button>
+          <button class="label-2">&nbsp;</button>
+          <button class="label-3">&nbsp;</button>
+          <button class="label-4">&nbsp;</button>
+          <button class="label-5">&nbsp;</button>
+          <button class="label-6">&nbsp;</button>
+          <button class="label-7">&nbsp;</button>
+          <button class="label-8">&nbsp;</button>
+          <button class="label-9">&nbsp;</button>
+          <button class="label-10">&nbsp;</button>
+          <button class="label-11">&nbsp;</button>
+          <button class="label-12">&nbsp;</button>
+        </div>
+        <div font>
+          <button class="label-1">T</button>
+          <button variant class="label-1 variant">T</button>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="scripts/bundle.js"></script>
+    <script>
+      let backgroundButtons = document.querySelectorAll('[background] button');
+      let fontButtons = document.querySelectorAll('[font] button');
+      let textarea = document.querySelector('textarea');
+
+      backgroundButtons.forEach((button) => button.addEventListener('click', (e) => {
+        textarea.className = e.currentTarget.className;
+        fontButtons[0].className = e.currentTarget.className;
+        fontButtons[1].className = `${e.currentTarget.className} variant`;
+      }));
+
+      fontButtons.forEach((button) => button.addEventListener('click', (e) => {
+        textarea.className = e.currentTarget.className;
+      }));
+    </script>
+  </body>
+</html>
